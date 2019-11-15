@@ -26,12 +26,18 @@
 		text-align: left;
 		height: 110px;
 		float:left;
-		background-color: rgb(197, 197, 197)
+		background-color: #cccccc;
+		border-bottom: 1pt;
+		border-left: 0pt;
+		border-right: 0pt;
+		border-top: 0pt;
+		border-color: white;
+		border-style: solid;
 		}
 		
 	.header.left {
 		width: 40%;
-		padding-top: 7px;
+		padding-top: 3px;
 		padding-bottom: 7px;
 		padding-left: 25px;
 		padding-right: 7px;
@@ -58,16 +64,23 @@
 		float: left;
 		padding: 10px;
 		height: 420px;
+		border: 3px;
+		border-color: white;
+		border-style: solid;
 	  }
 	  
 	  /* Left and right column */
 	.column.side {
 		width: 21.5%;
+		background-color: #aaa;
+		border-left: 0px;
+		border-right: 0px;
 	  }
 	  
 	  /* Middle column */
 	.column.middle {
 		width: 720px;
+		background-color: #ccc;
 	  }
 	  
 	  /* Clear floats after the columns */
@@ -79,7 +92,7 @@
 	  
 	  /* Style the footer */
 	.footer {
-		background-color: #f1f1f1;
+		background-color: #ddd;
 		padding: 10px;
 		text-align: center;
 	  }
@@ -93,8 +106,8 @@
 	</style>
 <header>
 	<div class="header left">
-		<h2 style="font-size: 20px;"><u>GP Project - Social Programs supporting People in Poverty</u></h2>
-		<h3 style="font-size: 15px;"><b>Comparison</b></h3>
+		<h2 style="font-size: 19px;"><u>GP Project - Social Programs supporting People in Poverty</u></h2>
+		<h3 style="font-size: 14px;"><b>Comparison</b></h3>
 	</div>
 	<div class="header right" id="header-right" style="vertical-align:middle">
 		<table align="center">
@@ -112,7 +125,7 @@
 <body>
 	<div class="row">
 
-		<div class="column side" style="background-color:#aaa;">
+		<div class="column side">
 			<b><u>Research Question</u></b> <br>
 			How do different cultures support people in poverty<br><br>
 			To make researching easier, only the main, govermentaly run, social program supporting people in poverty was used for each country. <br> <br>
@@ -128,14 +141,14 @@
 		
 		</div>
 	
-		<div class="column middle" id="map-holder" style="background-color:#bbb;">
+		<div class="column middle" id="map-holder">
 			<div id="vmap"></div>
 			<div id="directions"></div>
 			<div id="backButton" onClick="backButtonClick();">Back</div>
 			<div id="description-box"></div>
 		</div>
 
-	<div class="column side" style="background-color:#aaa;">
+	<div class="column side">
 		The Map on the side allows for an interactive illustration on the research done. <br><br>
 		To use the map: <ol>
 			<li>Select a continent by Left-clicking</li>
