@@ -1,0 +1,89 @@
+	* {
+			box-sizing: border-box;
+		}
+	  
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	  
+		/* Style the header */
+		.header {
+			text-align: left;
+			height: 110px;
+			float:left;
+			background-color: #cccccc;
+			border-bottom: 1pt;
+			border-left: 0pt;
+			border-right: 0pt;
+			border-top: 0pt;
+			border-color: white;
+			border-style: solid;
+			}
+		
+		.header.left {
+			width: 40%;
+			padding-top: 3px;
+			padding-bottom: 7px;
+			padding-left: 25px;
+			padding-right: 7px;
+		}
+		.header.right {
+			width: 60%;
+			text-align: center;	
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+
+		table, th, td {
+			border-collapse: collapse;
+		}
+
+		table {
+			width: 90%;
+			height: 100%;
+			text-align: center;
+			table-layout: fixed;
+		}
+	 	/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+			height: 420px;
+			border: 3px;
+			border-color: white;
+			border-style: solid;
+		}
+	  
+		/* Left and right column */
+		.column.side {
+			width: 21%;
+			background-color: #aaa;
+			border-left: 0px;
+			border-right: 0px;
+		}
+	  
+		/* Middle column */
+		.column.middle {
+			background-color: #ccc;
+		}
+		.column.bottom {
+			width: 100%;
+		}
+	  
+		#map-holder {
+			width: 720px;
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+	  	}
+	  
+		/* Style the footer */
+		.footer {
+			background-color: #ddd;
+			padding: 10px;
+			text-align: center;
+		}
