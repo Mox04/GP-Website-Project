@@ -72,7 +72,7 @@
 			border-style: solid;
 		}
 		
-		.column.left,.column.right {
+		.column.country {
 			width: 50%;
 			background-color: #aaa;
 		}
