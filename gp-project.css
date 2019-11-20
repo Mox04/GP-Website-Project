@@ -49,27 +49,49 @@
 			float: left;
 			padding: 10px;
 			height: 420px;
-			border: 3px;
-			border-color: white;
-			border-style: solid;
 		}
 	  
 		/* Left and right column */
 		.column.side {
 			width: 21%;
 			background-color: #aaa;
-			border-left: 0px;
-			border-right: 0px;
 		}
 	  
 		/* Middle column */
 		.column.middle {
 			background-color: #ccc;
+			border: 3px;
+			border-color: white;
+			border-style: solid;
 		}
+
 		.column.bottom {
 			width: 100%;
+			border: 3px;
+			border-color: white;
+			border-style: solid;
 		}
-	  
+		
+		.column.left,.column.right {
+			width: 50%;
+			background-color: #aaa;
+		}
+
+		.column.left {
+			border-right: 3px;
+			border-bottom: 3px;
+			border-top: 3px;
+			border-color: white;
+			border-style: solid;
+		}
+
+		.column.right {
+			border-left: 3px;
+			border-bottom: 3px;
+			border-top: 3px;
+			border-color: white;
+			border-style: solid;
+		}
 		#map-holder {
 			width: 720px;
 		}
