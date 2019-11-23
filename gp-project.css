@@ -86,6 +86,7 @@
 			border-color: white;
 			border-style: solid;
 			height: auto;
+			background-color: #ddd;
 		}
 		
 		.column.country {
@@ -121,9 +122,9 @@
 			clear: both;
 	  	}
 	  
-		/* Style the footer */
-		div.footer {
+		/* Style the bottombar */
+		div.bottombar {
 			background-color: #ddd;
-			padding: 10px;
+			padding: 7px;
 			text-align: center;
 		}
