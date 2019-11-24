@@ -2,46 +2,121 @@
 
 <html>
     <head>
-        <title>GP - Poland</title>
-       
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link href="gp-project.css" rel="stylesheet"></link>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<!-- 	<link href="gp-project.css" rel="stylesheet"></link> -->
+	
+		<title>GP - Poland</title>
+	
+		<!-- Map design CSS (font Verdana)-->
+		<link href="map-css.css" rel="stylesheet" type="text/css" />
+	
+		<!-- Map JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://germini.info/js/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+		<script src="https://germini.info/js/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+		<script src="map-country-infobox-breakdown.js" type="text/javascript"></script>
+		<script src="map-colour-data.js" type="text/javascript"></script>
+		<script src="map-infobox-data.js" type="text/javascript"></script>
+		<script src="map-zoom.js" type="text/javascript"></script>
+	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	
     </head>
 
-    <header>
-	
-		<div class="header left">
-			<h2 style="font-size: 19px;"><u>GP Project - Social Programs supporting People in Poverty</u></h2>
-			<h3 style="font-size: 14px;"><b>Comparison</b></h3>
-		</div>
-		<div class="header right" id="header-right" style="vertical-align:middle">
-			<table align="center">
-				<tr style="font-family: Comic Sans MS; font-size: 20px; color: #92A290;">
-					<td><a href="">Brazil</a></td>
-					<td><a href="">Canada</a></td>
-					<td><a href="poland.html">Poland</a></td>
-					<td><a href="">Botswana</a></td>
-					<td><a href="">Bangladesh</a></td>
-				</tr>
-			</table>
-		</div>
-	</header>
-
-
 	<body>
-		<div class="column left country" >
-			AAABBBCCC
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<a class="navbar-brand" href="#">GP Project</a>
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="brazil.html">Brazil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="canada.html">Canada</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="poland.html">Poland</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="botswana.html">Botswana</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="bangladesh.html">Bangladesh</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
 
-		<div class="column right country">
-			AAABBCCC
-		</div>
-	</body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm">
+	
+					<div class="card mt-2">
+						<div class="card-body">
+							<h5 class="card-title">Research Question</h5>
+							<p class="card-text">
+								How do different cultures support people in poverty<br>
+								To make researching easier, only the main, governmentally run, social program supporting people in poverty
+								was used for each country. <br> <br>
+								One country from each continents was researched:
+								<ul>
+									<li>N. America - <b>Canada</b></li>
+									<li>S. America - <b>Brazil</b></li>
+									<li>Europe - <b>Poland</b></li>
+									<li>Africa - <b>Botswana</b></li>
+									<li>Asia - <b>Bangladesh</b></li>
+								</ul>
+								The Oceania continent was omited from research.
+							</p>
+						</div>
+					</div>
+				</div>
 
-	<div class="footer">
-		<div>
-			<p>Global Perspectives Team Project - Max Birkett and Hugo Koszałkowski   |   <a href="sources.html">Sources</a></p>
+
+				
+		<div class="row">
+			<div class="col-sm">
+				<div class="card mt-2">
+					<div class="card-body">
+						<h5 class="card-title">Instructions</h5>
+						<p class="card-text">
+							The map allows for an interactive illustration on the research done. <br>
+							To use the map:
+							<ol>
+								<li>Select a continent by Left-clicking</li>
+								<li>And do the same to select a country</li>
+								<li>To return to the world view just press <b>BACK</b></li>
+							</ol>
+							If the map does not work or you just would like to go straight to the country specific page, please use
+							the menu above. The Oceania continent was omited from research.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
+		
+		
+		
+		<nav class="navbar navbar-expand-lg navbar-light mt-2" style="background-color: #ccc;">
+			<div class="navbar-text" style="width: 100%; text-align: center;">
+	
+				Global Perspectives Team Project - Max Birkett and Hugo Koszałkowski | <a href="sources.html">Sources</a>
+			</div>
+		</nav>
+	</body>
 </html>
