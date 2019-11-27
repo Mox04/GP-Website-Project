@@ -329,7 +329,7 @@ function displayBoxText (cc) {
 
 			$('#description-box').append('<div id="program-holder"></div>');
 			if(terms == null){
-				$('#program-holder').append('<div class="term-programs center-text">No reserarch was made for this country.</div>');
+				$('#program-holder').append('<div class="term-programs center-text">No research was made for this country.</div>');
 			}else{
 				if(terms.test != null){
 					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">TEST</div>');
