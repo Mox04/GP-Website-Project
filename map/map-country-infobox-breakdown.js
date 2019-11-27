@@ -331,42 +331,33 @@ function displayBoxText (cc) {
 			if(terms == null){
 				$('#program-holder').append('<div class="term-programs center-text">No research was made for this country.</div>');
 			}else{
-				if(terms.test != null){
-					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">TEST</div>');
-					var programInfo = terms.test;
+				if(terms.link != null){
+					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Link</div>');
+					var programInfo = terms.link;
 					programInfo.forEach(function (value, i) {
 					    if(i%2 == 0)
-					    	$('#program-holder').append('<a class="program-link" href=' + programInfo[i+1] + '><div class="programs "><img src="../samples/images/flagimg.png"><div class="program-name center-left">' + value + '</div></div></a>');
-					});
-					$('#program-holder').append('</div>');
-				}
-				if(terms.test1 != null){
-					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Test1</div>');
-					var programInfo = terms.test1;
-					programInfo.forEach(function (value, i) {
-					    if(i%2 == 0)
-					    	$('#program-holder').append('<a class="program-link" href=' + programInfo[i+1] + '><div class="programs"><img src="../samples/images/flagimg.png"><div class="program-name center-left">' + value + '</div></div></a>');
+					    	$('#program-holder').append('<a class="program-link" href=' + programInfo[i+1] + '><div class="programs"><div class="program-name center">' + value + '</div></div></a>');
 					});
 					$('#program-holder').append('</div>');
 				} 
-				if(terms.test2 != null){
-					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Test2</div>');
-					var programInfo = terms.test2;
+				if(terms.progdesc != null){
+					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Program Desc.</div>');
+					var programInfo = terms.progdesc;
 					programInfo.forEach(function (value, i) {
 					    if(i%2 == 0)
-					    	$('#program-holder').append('<a class="program-link" href=' + programInfo[i+1] + '><div class="programs"><img src="../samples/images/flagimg.png"><div class="program-name center-left">' + value + '</div></div></a>');
+					    	$('#program-holder').append('<div class="programs "><div class="program-name center-left">' + value + '</div></div>');
 					});
 					$('#program-holder').append('</div>');
 				}
-				if(terms.test3 != null){
-					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Test3</div>');
-					var programInfo = terms.test3;
+				if(terms.stat != null){
+					$('#program-holder').append('<div class="term-programs"><div class="subheader center-text">Statistics</div>');
+					var programInfo = terms.stat;
 					programInfo.forEach(function (value, i) {
 					    if(i%2 == 0)
-					    	$('#program-holder').append('<a class="program-link" href=' + programInfo[i+1] + '><div class="programs"><img src="../samples/images/flagimg.png"><div class="program-name center-left">' + value + '</div></div></a>');
+					    	$('#program-holder').append('<div class="programs "><div class="program-name center-left">' + value + '</div></div>');
 					});
 					$('#program-holder').append('</div>');
-				}
+				} 
 			}
 		}else{
 			$('#description-box').fadeOut();
