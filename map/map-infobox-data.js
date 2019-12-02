@@ -17,7 +17,7 @@ var EuropePrograms = {
 var AsiaPrograms = {
 	"bd" : {
 		"link": ["Link to Country page","bangladesh.html"],
-		"progdesc": ["<u>...:</u><br>...", "placeholder"], //INFO MISSING//
+		"progdesc": ["<u>Seventh Five Year Plan:</u><br>The plan includes the main policies of the country to do with the economy, labour and poverty. The plan is revisited and reworked every five years and now is on the seventh edition. The plan does not have one impactful program and therefore we analysed the whole plan.", "placeholder"], //INFO MISSING//
 		"stat": ["Number of Beneficiaries: ...<sup>...</sup>","placeholder","Total Annual Spending: ... <sup>...</sup>","placeholder"],
 	},
 };
